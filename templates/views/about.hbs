@@ -1,0 +1,25 @@
+{{!-- handle bars file.. dynamic html file for node --}}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="/js/app.js"></script>
+    </head>
+
+    <body>
+        {{>header}}
+        <img class="portrait" src="/img/kobe.jpg">
+        <p>Created by {{name}}</p>
+
+
+        <div class="main-content">
+            <p>Use this site to get your weather</p>
+        </div>
+
+        {{>footer}}
+    </body>
+
+</html>

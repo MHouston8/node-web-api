@@ -1,0 +1,27 @@
+{{!-- handle bars file.. dynamic html file for node --}}
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Help</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="/js/app.js"></script>
+    </head>
+
+    <body>
+        {{!-- Render the partial view --}}
+        {{>header}}
+
+        <div class="main-content">
+            <h1>{{name}}</h1>
+        </div>
+        
+
+{{!-- Render the partial view --}}
+        {{>footer}}
+    </body>
+
+
+</html>
