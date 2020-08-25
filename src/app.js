@@ -11,6 +11,9 @@ const forecast = require('./utils/forecast')
 //create express application
 const application = express()
 
+//get port number from heroku.. if not run on port 3000 locally
+const port = process.env.PORT || 3000
+
 //load in hbs
 const hbs = require('hbs')
 
@@ -123,6 +126,6 @@ application.get('*', (request, response) => {
 })
 
 //start the server
-application.listen(3000, () => {
-    console.log('Server is running on port 3000')
+application.listen(port, () => {
+    console.log('Server is running on port ' + port)
 })
